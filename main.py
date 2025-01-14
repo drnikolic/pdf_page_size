@@ -17,7 +17,7 @@ folder_path = args.folder_path
 output_csv = args.output_csv
 
 # Open the CSV file for writing
-with open(output_csv, "w", newline="") as csvfile:
+with open(output_csv, "w", newline="", encoding="utf-8") as csvfile:
     csv_writer = csv.writer(csvfile)
     # Write the header
     csv_writer.writerow(["File Name", "Page Number", "Width (mm)", "Height (mm)"])
